@@ -1,7 +1,19 @@
-# A sample Gemfile
-source "https://rubygems.org"
+def my_collect(array)
+    i = 0
+    collection = []
+    while i < array.length
+      #collection << yield(array[i])
+      #i += 1
+    end
+    collection
+end
+    array.collect do |language|
+        "#{language.upcase!}"
+    end
+      array.collect do |names|
+        "#{names.split(" ").first}"
+    end
+  end
 
-# gem "rails"
 
-gem 'rspec'
-gem 'pry'
+
